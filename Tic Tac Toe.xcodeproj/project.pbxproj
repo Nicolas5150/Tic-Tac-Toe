@@ -12,6 +12,9 @@
 		37CA53021B74817500B5B3EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37CA53001B74817500B5B3EA /* Main.storyboard */; };
 		37CA53041B74817500B5B3EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37CA53031B74817500B5B3EA /* Assets.xcassets */; };
 		37CA53071B74817500B5B3EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37CA53051B74817500B5B3EA /* LaunchScreen.storyboard */; };
+		37CA53111B7481F100B5B3EA /* board.png in Resources */ = {isa = PBXBuildFile; fileRef = 37CA530E1B7481F100B5B3EA /* board.png */; };
+		37CA53121B7481F100B5B3EA /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 37CA530F1B7481F100B5B3EA /* cross.png */; };
+		37CA53131B7481F100B5B3EA /* nought.png in Resources */ = {isa = PBXBuildFile; fileRef = 37CA53101B7481F100B5B3EA /* nought.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		37CA53031B74817500B5B3EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37CA53061B74817500B5B3EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37CA53081B74817500B5B3EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37CA530E1B7481F100B5B3EA /* board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = board.png; sourceTree = "<group>"; };
+		37CA530F1B7481F100B5B3EA /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
+		37CA53101B7481F100B5B3EA /* nought.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nought.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 				37CA52FE1B74817500B5B3EA /* ViewController.swift */,
 				37CA53001B74817500B5B3EA /* Main.storyboard */,
 				37CA53031B74817500B5B3EA /* Assets.xcassets */,
+				37CA530E1B7481F100B5B3EA /* board.png */,
+				37CA530F1B7481F100B5B3EA /* cross.png */,
+				37CA53101B7481F100B5B3EA /* nought.png */,
 				37CA53051B74817500B5B3EA /* LaunchScreen.storyboard */,
 				37CA53081B74817500B5B3EA /* Info.plist */,
 			);
@@ -95,6 +104,7 @@
 				TargetAttributes = {
 					37CA52F81B74817500B5B3EA = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = CSNAS6J4W8;
 					};
 				};
 			};
@@ -121,6 +131,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37CA53121B7481F100B5B3EA /* cross.png in Resources */,
+				37CA53111B7481F100B5B3EA /* board.png in Resources */,
+				37CA53131B7481F100B5B3EA /* nought.png in Resources */,
 				37CA53071B74817500B5B3EA /* LaunchScreen.storyboard in Resources */,
 				37CA53041B74817500B5B3EA /* Assets.xcassets in Resources */,
 				37CA53021B74817500B5B3EA /* Main.storyboard in Resources */,
@@ -246,10 +259,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Tic Tac Toe/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Nicolas.Tic-Tac-Toe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -257,10 +273,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Tic Tac Toe/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Nicolas.Tic-Tac-Toe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -283,6 +302,7 @@
 				37CA530D1B74817500B5B3EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
